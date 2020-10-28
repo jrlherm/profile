@@ -61,7 +61,6 @@ li {
   padding: 15px 20px;
   border: 1px solid #4E8098;
   font-weight: 100;
-  border-radius: 4px;
 }
 .button:hover {
   background-color: #4E8098;
@@ -69,6 +68,32 @@ li {
   transition-duration: 100ms;
   transition-timing-function: ease-in-out;
 }
+
+
+.btn-grad {
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: inline-block;
+  border: 0px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 60px;
+}
+
 
 .social ul {
   padding: 0;
@@ -87,6 +112,32 @@ li {
   transition-duration: 100ms;
   transition-timing-function: ease-in-out;
 
+}
+
+/*Background animated gradient*/
+body {
+    background: linear-gradient(135deg, #8BC6EC, #9599E2);
+    background-size: 400% 400%;
+    -webkit-animation: bganimation 30s ease infinite;
+    -moz-animation: bganimation 30s ease infinite;
+    animation: bganimation 30s ease infinite;
+}
+
+
+@-webkit-keyframes bganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 
